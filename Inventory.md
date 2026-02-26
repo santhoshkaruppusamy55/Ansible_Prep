@@ -1,0 +1,34 @@
+
+## Inventory File
+
+The inventory file stores the **Private IP addresses of managed nodes**.
+
+**Create inventory file:**
+```bash
+vim inventory
+```
+
+### Static Inventory
+
+Simple inventory with all IPs:
+
+```ini
+172.31.16.18
+196.32.68.32
+```
+
+### Grouped Inventory
+
+Group servers by function:
+
+```ini
+[webservers]
+172.31.16.18
+196.32.68.32
+
+[dbservers]
+171.36.71.78
+168.18.20.71
+```
+
+---
